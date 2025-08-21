@@ -1,17 +1,10 @@
-# Mixtli Backend Ready (Railway)
+# Mixtli Backend (Limpio)
+Estructura mínima lista para Railway.
 
-## Cómo usar este ZIP
-1. **Sube** TODO el contenido de esta carpeta a tu repo de GitHub `mixtli-backend` (no subas el .zip, sube los archivos y carpetas).
-2. En **Railway → + New → GitHub Repo**, elige el repo y despliega.
-3. Ve a **Service → Variables** y copia los valores de `.env` (con tus datos reales).
-4. Ejecuta en **Service → Shell**:
-   ```
-   npx prisma generate
-   npx prisma migrate deploy
-   ```
+## Cómo usar
+1. Sube **el contenido** de este zip a tu repo (no subas el zip).
+2. En Railway: + New → GitHub Repo → selecciona tu repo → Deploy.
+3. Variables: añade PORT=3000 y ALLOWED_ORIGINS con tu dominio de Netlify.
+4. Abre la URL pública: debería mostrar `API Mixtli funcionando 🚀`.
 
-## Endpoints
-- `POST /api/upload/request`
-- `POST /api/upload/confirm`
-- `GET  /api/download/:token`
-- `POST /api/send`
+> Esta versión es base. Para la versión PRO con R2/S3 y Postgres, reemplaza `src/` con la versión avanzada.
